@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew Cross — Engineering Leader</title>
+  <meta name="description" content="Andrew Cross — Engineering Leader. I build high-performing engineering organisations and own the AI strategy behind them.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Andrew Cross — Engineering Leader">
+  <meta property="og:description" content="I build high-performing engineering organisations and own the AI strategy behind them.">
+  <meta property="og:url" content="https://andrewcross.net">
+  <meta name="theme-color" content="#f8f5ef">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:      #f8f5ef;
+      --ink:     #2a2722;
+      --accent:  #bd6a44;
+      --muted-1: #3a352d;
+      --muted-2: #5c564c;
+      --muted-3: #7a7466;
+      --muted-4: #9a9183;
+      --rule:    #e5ddd0;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    ::selection { background: var(--accent); color: var(--bg); }
+
+    .page {
+      min-height: 100vh;
+      padding: 48px 40px 0;
+    }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* top bar */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 120px;
+    }
+    .brand {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .role {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      color: var(--muted-4);
+      text-transform: uppercase;
+    }
+
+    /* hero */
+    .hero-title {
+      font-size: 56px;
+      font-weight: 300;
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      margin: 0;
+      text-wrap: balance;
+    }
+    .hero-title .accent { color: var(--accent); }
+
+    .hero-sub {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--muted-2);
+      max-width: 540px;
+      margin: 32px 0 96px;
+    }
+
+    /* philosophy */
+    .philosophy {
+      font-family: 'Newsreader', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.45;
+      color: var(--muted-1);
+      max-width: 620px;
+      margin: 0 0 96px;
+    }
+
+    /* focus */
+    .focus {
+      border-top: 1px solid var(--rule);
+      padding-top: 40px;
+      margin-bottom: 96px;
+    }
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px 48px;
+    }
+    .focus-area h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+    }
+    .focus-area p {
+      font-size: 15px;
+      color: var(--muted-3);
+      margin: 6px 0 0;
+    }
+
+    /* close */
+    .close {
+      border-top: 1px solid var(--rule);
+      padding: 64px 0 80px;
+    }
+    .close-line {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.45;
+      letter-spacing: -0.01em;
+      max-width: 540px;
+      margin: 0 0 36px;
+      color: var(--ink);
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 15px 28px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: transform 0.18s ease, background 0.18s ease;
+    }
+    .cta:hover {
+      background: #a85a37;
+      transform: translateY(-1px);
+    }
+    .cta:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    /* responsive */
+    @media (max-width: 640px) {
+      .page { padding: 32px 24px 0; }
+      .topbar { padding-bottom: 72px; }
+      .hero-title { font-size: 38px; }
+      .hero-sub { font-size: 18px; margin: 24px 0 64px; }
+      .philosophy { font-size: 24px; margin-bottom: 64px; }
+      .focus { margin-bottom: 64px; }
+      .focus-grid { grid-template-columns: 1fr; gap: 24px; }
+      .close { padding: 48px 0 64px; }
+      .close-line { font-size: 21px; }
+    }
+
+    @media (max-width: 380px) {
+      .topbar { flex-direction: column; align-items: flex-start; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="wrap">
+
+      <!-- top bar -->
+      <header class="topbar">
+        <div class="brand">Andrew Cross</div>
+        <div class="role">Engineering Leader</div>
+      </header>
+
+      <!-- hero -->
+      <main>
+        <h1 class="hero-title">Great engineering organisations aren't found.<span class="accent"> I build them.</span></h1>
+        <p class="hero-sub">I lead high-performing engineering organisations, and I own the AI strategy behind them: rolling out AI-assisted engineering practices, building the internal tooling to support them, and upskilling teams to use them well.</p>
+
+        <!-- philosophy -->
+        <p class="philosophy">The best platforms are owned, not operated. The best teams are led, not managed.</p>
+
+        <!-- focus -->
+        <section class="focus" aria-label="Areas of focus">
+          <div class="focus-grid">
+            <div class="focus-area">
+              <h2>Reliability &amp; Resilience</h2>
+              <p>Observability · Incident response · DR · Uptime ownership</p>
+            </div>
+            <div class="focus-area">
+              <h2>Security &amp; Compliance</h2>
+              <p>Zero-trust · Risk management · Governance · Policy</p>
+            </div>
+            <div class="focus-area">
+              <h2>Engineering Delivery</h2>
+              <p>Technical strategy · Roadmap ownership · Cross-functional delivery</p>
+            </div>
+            <div class="focus-area">
+              <h2>People &amp; Organisation</h2>
+              <p>Org design · Hiring · Engineering culture · Headcount planning</p>
+            </div>
+            <div class="focus-area">
+              <h2>AI Strategy &amp; Adoption</h2>
+              <p>Tooling rollout · Workflow automation · Governance &amp; policy · Team upskilling</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- close -->
+      <footer class="close">
+        <p class="close-line">Ready for broader scope. The next step is setting technical and AI strategy for an entire organisation.</p>
+        <a class="cta" href="https://www.linkedin.com/in/andrewcross">Connect on LinkedIn →</a>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
